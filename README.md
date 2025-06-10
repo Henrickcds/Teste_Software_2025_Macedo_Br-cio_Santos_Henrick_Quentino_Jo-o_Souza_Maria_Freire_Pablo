@@ -1,0 +1,2 @@
+# Teste_Software_2025_Macedo_Br-cio_Santos_Henrick_Quentino_Jo-o_Souza_Maria_Freire_Pablo
+Trabalho de Teste de Software 2025.1
