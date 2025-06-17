@@ -112,24 +112,31 @@ public class TestCircle {
 
 ---
 
+Claro! Aqui está o `README` atualizado com instruções completas de **instalação e configuração do Maven** para **Windows e Linux (Ubuntu)**:
+
+---
+
 ## ⚙️ Instalação e Configuração do Maven
 
-### 1. Baixe o Maven
+### 🪟 Windows
 
-- Acesse: https://maven.apache.org/download.cgi
-- Baixe a versão `.zip` e extraia em um local como: `C:\Program Files\Apache\Maven`
+#### 1. Baixe o Maven
 
-### 2. Configure as variáveis de ambiente
+* Acesse: [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi)
+* Baixe a versão `.zip`
+* Extraia em um local como: `C:\Program Files\Apache\Maven`
 
-No Windows:
+#### 2. Configure as variáveis de ambiente
 
-- Adicione nas variáveis do sistema:
-  - `MAVEN_HOME`: caminho para a pasta do Maven (ex: `C:\Program Files\Apache\Maven`)
-  - Edite `Path` e adicione: `C:\Program Files\Apache\Maven\bin`
+* Abra o **Painel de Controle > Sistema > Configurações avançadas do sistema > Variáveis de Ambiente**
+* Adicione:
 
-> Após isso, **reinicie o terminal ou o VS Code**.
+  * `MAVEN_HOME`: `C:\Program Files\Apache\Maven`
+  * Edite a variável `Path` e adicione: `C:\Program Files\Apache\Maven\bin`
 
-### 3. Teste no terminal:
+> Após isso, **reinicie o terminal ou o VS Code**
+
+#### 3. Teste a instalação:
 
 ```bash
 mvn -v
@@ -139,9 +146,54 @@ Deve retornar a versão do Maven instalada.
 
 ---
 
+### 🐧 Linux (Ubuntu 22.04)
+
+#### 1. Baixe o Maven
+
+* Acesse: [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi)
+* Baixe o arquivo `.tar.gz`, por exemplo: `apache-maven-<versao>-bin.tar.gz`
+
+
+#### 2. Extraia o arquivo
+
+```bash
+tar -xzf apache-maven-3.9.6-bin.tar.gz
+sudo mv apache-maven-3.9.6 /opt/maven
+```
+
+#### 3. Configure as variáveis de ambiente
+
+Adicione ao final do seu `~/.bashrc`, `~/.zshrc` ou `~/.profile`:
+
+```bash
+export MAVEN_HOME=/opt/maven
+export PATH=$MAVEN_HOME/bin:$PATH
+```
+
+Depois, aplique as alterações:
+
+```bash
+source ~/.bashrc  # ou source ~/.zshrc
+```
+
+#### 4. Teste a instalação:
+
+```bash
+mvnd -v
+```
+
+Você deve ver a versão do Maven instalada.
+
+
+---
+
+
+---
+
 ## 🧪 Como Rodar os Testes
 
 ### Rodar todos os testes
+#### mvn no windows, mvnd no linux
 ```bash
 mvn test
 ```
