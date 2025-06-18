@@ -256,3 +256,10 @@ mvn test -Dtest=TestCircle#testArea+testCircumference
   </build>
 </project>
 ```
+
+## 🎥 Link do Vídeo Tutorial
+
+Assista ao tutorial gravado em vídeo sobre como executar testes específicos com Maven:
+
+[Link para o Vídeo no YouTube](https://youtu.be/rr_CHZ628MI)
+...
